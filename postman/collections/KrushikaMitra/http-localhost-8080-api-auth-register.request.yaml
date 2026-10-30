@@ -1,0 +1,27 @@
+$kind: http-request
+name: http://localhost:8080/api/auth/register
+description: ""
+url: http://localhost:8080/api/auth/register
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"firstName\": \"Ravi\",\r
+
+    \  \"lastName\": \"Kumar\",\r
+
+    \  \"email\": \"ravi.kumar@example.com\",\r
+
+    \  \"password\": \"StrongPass123!\",\r
+
+    \  \"phoneNumber\": \"9876543210\",\r
+
+    \  \"role\": \"FARMER\",\r
+
+    \  \"district\": \"Mysuru\",\r
+
+    \  \"state\": \"Karnataka\"\r
+
+    }\r\n"
+order: 2000

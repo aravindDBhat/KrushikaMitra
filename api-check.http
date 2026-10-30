@@ -1,0 +1,26 @@
+@baseUrl = http://localhost:8080
+
+### Register a farmer
+POST {{baseUrl}}/api/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Test",
+  "lastName": "User",
+  "email": "testuser@example.com",
+  "password": "Test123!",
+  "phoneNumber": "9876543210",
+  "role": "FARMER",
+  "district": "Bengaluru",
+  "state": "Karnataka"
+}
+
+> {% 
+  client.test("registration succeeds", function () {
+    client.assert(response.status === 200, "Expected HTTP 200");
+    client.assert(
+      response.body === "User registered successfully",
+      "Expected successful registration response"
+    );
+  });
+%}

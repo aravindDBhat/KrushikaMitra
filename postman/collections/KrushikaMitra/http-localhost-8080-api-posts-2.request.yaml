@@ -1,0 +1,19 @@
+$kind: http-request
+name: http://localhost:8080/api/posts
+description: ""
+url: http://localhost:8080/api/posts
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Rice Crop Affected by Brown Spots\",\r
+
+    \  \"description\": \"Brown circular spots have appeared on rice leaves over the last 10 days. The affected area is increasing and crop growth has slowed.\",\r
+
+    \  \"district\": \"Mysoor\",\r
+
+    \  \"imageUrl\": \"https://example.com/rice-disease.jpg\"\r
+
+    }"
+order: 7000

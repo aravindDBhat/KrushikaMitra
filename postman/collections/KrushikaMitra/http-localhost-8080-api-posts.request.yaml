@@ -1,0 +1,23 @@
+$kind: http-request
+name: http://localhost:8080/api/posts
+description: ""
+url: http://localhost:8080/api/posts
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Tomato Leaves Turning Yellow\",\r
+
+    \  \"description\": \"My tomato plants have yellow spots on the leaves and growth has slowed down over the last week.\",\r
+
+    \  \"district\": \"Mysuru\",\r
+
+    \  \"imageUrl\": \"https://example.com/tomato-disease.jpg\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0keu}}"
+order: 4000

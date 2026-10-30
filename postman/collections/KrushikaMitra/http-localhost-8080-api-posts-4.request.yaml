@@ -1,0 +1,13 @@
+$kind: http-request
+name: http://localhost:8080/api/posts/4
+description: ""
+url: http://localhost:8080/api/posts/4
+method: DELETE
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0keu}}"
+order: 8000
